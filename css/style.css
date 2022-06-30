@@ -37,10 +37,13 @@ body {
   background-size: cover; }
   .section-top__text {
     text-align: center;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    margin-top: 2rem; }
 
 .section-bottom {
   margin-top: 2rem; }
+  .section-bottom__text {
+    line-height: 1.7; }
 
 .cta {
   display: flex;
@@ -64,6 +67,21 @@ body {
     .cta__primary:hover {
       border: 2px solid #fff;
       background-color: transparent; }
+
+.features-image {
+  margin-top: 4rem !important;
+  width: 4rem;
+  margin: 0 auto; }
+  .features-image__image {
+    width: 100%; }
+
+.features__title {
+  margin: 4rem 0;
+  font-size: 1.8rem; }
+
+.features__paragraph {
+  line-height: 1.7;
+  font-size: 1.5rem; }
 
 .navigation {
   display: flex;
@@ -160,8 +178,19 @@ body {
       margin-right: 1rem; }
 
 .section-carousel {
-  min-height: 30rem;
   padding: 2rem; }
+
+.section-features {
+  padding: 2rem;
+  min-height: 30rem;
+  background-color: #242323;
+  text-align: center; }
+  .section-features__text {
+    color: #d3d3d3;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 2rem; }
+  .section-features h1 {
+    margin-bottom: 1rem; }
 
 .ctrl {
   background: none;

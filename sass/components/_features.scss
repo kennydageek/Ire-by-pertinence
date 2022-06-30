@@ -1,0 +1,18 @@
+.features-image {
+  margin-top: 4rem !important;
+  width: 4rem;
+  margin: 0 auto;
+  &__image {
+    width: 100%;
+  }
+}
+
+.features__title {
+  margin: 4rem 0;
+  font-size: 1.8rem;
+}
+
+.features__paragraph {
+  line-height: 1.7;
+  font-size: 1.5rem;
+}

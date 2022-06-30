@@ -1,4 +1,20 @@
 .section-carousel {
-  min-height: 30rem;
   padding: 2rem;
+}
+
+.section-features {
+  padding: 2rem;
+  min-height: 30rem;
+  background-color: $bg-color-blackgrey;
+  text-align: center;
+
+  &__text {
+    color: #d3d3d3;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  & h1 {
+    margin-bottom: 1rem;
+  }
 }
