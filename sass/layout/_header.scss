@@ -1,7 +1,7 @@
 .header {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: $bg-color-header;
   background-image: linear-gradient(
       rgba($color-black, 0.5),
@@ -42,6 +42,7 @@
   margin-bottom: 2rem;
   background-image: url('https://ire.ng/wp-content/uploads/2022/06/irethumbnail.jpeg');
   background-size: cover;
+  background-position: center;
 
   &__video {
     display: block;

@@ -1,0 +1,36 @@
+.ctrl {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: lightgray;
+  outline: 0;
+}
+.carousel {
+  background: slateblue;
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  margin: auto;
+  overflow: hidden;
+}
+.slide {
+  background: slateblue;
+  font-size: 4rem;
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 500ms ease-in-out;
+  will-change: transform;
+}
+.slide-next-enter,
+.slide-prev-exit {
+  transform: translateX(100%);
+}
+.slide-prev-enter,
+.slide-next-exit {
+  transform: translateX(-100%);
+}

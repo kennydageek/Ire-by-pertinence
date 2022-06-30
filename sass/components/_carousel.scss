@@ -1,0 +1,27 @@
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-top {
+  flex-basis: 40rem;
+  background: $color-black;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.2),
+      rgba($color-black, 0.4)
+    ),
+    url('../../img/carousel2.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__text {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.section-bottom {
+  margin-top: 2rem;
+}

@@ -25,6 +25,23 @@ body {
 .hidden {
   display: none; }
 
+.section-wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.section-top {
+  flex-basis: 40rem;
+  background: #000;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../../img/carousel2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section-top__text {
+    text-align: center;
+    margin-bottom: 2rem; }
+
+.section-bottom {
+  margin-top: 2rem; }
+
 .cta {
   display: flex;
   flex-direction: column;
@@ -97,7 +114,7 @@ body {
 .header {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #003b36;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../../img/hero.jpg");
   background-size: cover;
@@ -127,7 +144,8 @@ body {
   height: 23rem;
   margin-bottom: 2rem;
   background-image: url("https://ire.ng/wp-content/uploads/2022/06/irethumbnail.jpeg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   .header-video__video {
     display: block;
     width: 100%; }
@@ -140,3 +158,43 @@ body {
       width: 1rem;
       display: inline-block;
       margin-right: 1rem; }
+
+.section-carousel {
+  min-height: 30rem;
+  padding: 2rem; }
+
+.ctrl {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: lightgray;
+  outline: 0; }
+
+.carousel {
+  background: slateblue;
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  margin: auto;
+  overflow: hidden; }
+
+.slide {
+  background: slateblue;
+  font-size: 4rem;
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 500ms ease-in-out;
+  will-change: transform; }
+
+.slide-next-enter,
+.slide-prev-exit {
+  transform: translateX(100%); }
+
+.slide-prev-enter,
+.slide-next-exit {
+  transform: translateX(-100%); }
