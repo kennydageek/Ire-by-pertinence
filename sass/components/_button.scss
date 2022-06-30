@@ -1,0 +1,20 @@
+.btn {
+  margin-top: 5rem;
+
+  span {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
+  &__download {
+    display: block;
+    background: $color-orange;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    color: $color-white;
+  }
+
+  &__icon {
+    width: 2rem;
+  }
+}

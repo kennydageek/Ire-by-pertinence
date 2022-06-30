@@ -25,6 +25,20 @@ body {
 .hidden {
   display: none; }
 
+.btn {
+  margin-top: 5rem; }
+  .btn span {
+    display: inline-block;
+    margin-left: 1rem; }
+  .btn__download {
+    display: block;
+    background: #ffa137;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    color: #fff; }
+  .btn__icon {
+    width: 2rem; }
+
 .section-wrapper {
   display: flex;
   flex-direction: column; }
@@ -181,7 +195,7 @@ body {
   padding: 2rem; }
 
 .section-features {
-  padding: 2rem;
+  padding: 6rem 2rem;
   min-height: 30rem;
   background-color: #242323;
   text-align: center; }
