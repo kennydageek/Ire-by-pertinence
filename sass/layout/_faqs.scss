@@ -1,0 +1,127 @@
+.faqs {
+  background-color: $color-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    padding: 7rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    &--left {
+      align-self: flex-start;
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      &_header {
+        text-align: center;
+        font-size: 1.7rem;
+
+        margin-bottom: 4rem;
+      }
+      &_question {
+        width: 100%;
+        margin: 0.1rem 0;
+      }
+      .question__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5rem 1rem;
+        cursor: pointer;
+        background-color: #043b36;
+      }
+      .question__icon {
+        font-size: 1.5rem;
+        transform: rotate(0deg);
+      }
+
+      .question__item-title {
+        font-size: 1.5rem;
+      }
+
+      .question__description {
+        color: $color-black;
+        background-color: $color-white;
+        font-size: 1.5rem;
+        padding: 1.5rem 1rem;
+        line-height: 1.5;
+      }
+
+      .question__content {
+        overflow: hidden;
+        height: 0;
+      }
+
+      .active {
+        overflow: visible;
+        height: auto;
+      }
+
+      .question__item,
+      .question__header,
+      .question__item-title,
+      .question__content,
+      .question__icon,
+      .question__description {
+        transition: all 0.3s ease-in-out;
+      }
+
+      .accordion-open .question__icon {
+        color: $color-orange;
+      }
+
+      .accordion-open .question__icon {
+        transform: rotate(180deg);
+      }
+
+      &-question-button {
+        .question-btn {
+          border: none;
+          padding: 1rem 1.5rem;
+          background-color: $color-orange;
+          color: $color-white;
+          & a {
+            display: flex;
+            gap: 1rem;
+            color: $color-white;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 768px) {
+  .faqs__container {
+    &--left{
+      .faqs__container--header{
+        font-size: 5rem;
+      }
+    }
+    flex-direction: row;
+    justify-content: center;
+    gap: 20rem;
+    &--right{
+      width: 70%;
+      &-question-button {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+@media screen and (min-width: 968px) {
+}
+@media screen and (min-width: 1200px) {
+}

@@ -1,0 +1,101 @@
+// services styles
+.service {
+  background-color: #000000;
+  &__container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 8.5rem;
+    &--card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &_summary {
+        background-color: #1a1818;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 7rem 2rem;
+
+        &-header {
+          font-size: 3rem;
+          font-weight: 800;
+          text-align: center;
+          padding: 0rem 0 2rem;
+        }
+        &-content {
+          font-size: 1.3rem;
+          line-height: 1.6;
+        }
+        .summary-divider {
+          align-self: flex-start;
+          width: 14%;
+          background-color: $color-white;
+          height: 2px;
+        }
+      }
+      &_photo {
+        & img {
+          max-width: 100%;
+          object-fit: cover;
+        }
+        .sport {
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries
+
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 768px) {
+  //   service
+  .service__container {
+    padding: 8rem 0;
+    gap: 0;
+    &--card {
+      flex-direction: row;
+      &_summary {
+        width: 470px;
+        height: 506px;
+        padding: 0;
+        &-content {
+          font-size: 1.5rem;
+          line-height: 1.6;
+          padding: 0 3rem;
+        }
+        .summary-divider {
+          width: 12%;
+          margin: 0 3rem;
+        }
+      }
+      .sport-center {
+        order: -1;
+      }
+      .school {
+        order: -1;
+      }
+
+      &_photo {
+        height: 506px;
+        width: 470px;
+        // width: 30%;
+        & img {
+          height: 504px;
+        }
+      }
+    }
+  }
+
+
+}
+@media screen and (min-width: 968px) {
+}
+@media screen and (min-width: 1200px) {
+}

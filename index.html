@@ -1,181 +1,873 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- ============META TAGS=========== -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ire by Pertinence</title>
+
+    <!-- ================BOX ICONS===================== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ================FONT AWESOME===================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ============== SCSS LINKS================ -->
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- ==============TITLE LINKS================ -->
+    <title>Ire by Pertinence</title>
   </head>
   <body>
-    <header class="header">
-      <!-- navigation starts -->
-      <nav class="navigation flex">
-        <div class="nav-logo">
-          <img src="img/logo.png" alt="" class="nav-logo__logo" />
+    <!-- ================HEADER============ -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav__logo">
+          <a href="#" class="nav__logo">
+            <img src="img/logo.png" alt="Ire Logo" />
+          </a>
         </div>
-        <div class="nav-menu">
-          <img src="img/font-svg/bars-solid.svg" alt="" class="nav-menu__ham" />
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__items">
+              <a href="#" class="nav__link">Features & Benefits</a>
+            </li>
+            <li class="nav__items">
+              <a href="#" class="nav__link">Gallery</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#" class="nav__link">Pricing</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#" class="nav__link">Our Story</a>
+            </li>
+
+            <li class="nav__items"><a href="#" class="nav__link">Faqs</a></li>
+          </ul>
         </div>
+
+        <div>
+          <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
+        </div>
+
+        <button class="nav__button-btn">
+          <a href="#" class="nav__button--btn_link">Book an inspection</a>
+        </button>
+
+        <button class="nav__button-btn-2">
+          <a href="#" class="nav__button--btn_link">Request A Call</a>
+        </button>
       </nav>
-      <!-- navigation ends -->
-
-      <!-- Sidebar starts -->
-      <div class="sidebar hidden">
-        <nav class="navigation flex">
-          <div class="nav-logo">
-            <img
-              src="img/logo.png"
-              alt=""
-              class="nav-logo__logo"
-            />
-          </div>
-          <div class="nav-menu">
-            <img
-              src="img/font-svg/xmark-solid.svg"
-              alt=""
-              class="nav-menu__ham nav-menu__cancel"
-            />
-          </div>
-        </nav>
-        <div class="nav-links">
-          <a href="#" class="nav-links__link">Features & Benefits</a>
-          <a href="#" class="nav-links__link">Gallery</a>
-          <a href="#" class="nav-links__link">Pricing</a>
-          <a href="#" class="nav-links__link">Our Story</a>
-          <a href="#" class="nav-links__link">Faq</a>
-        </div>
-      </div>
-      <!-- Sidebar ends -->
-
-      <!-- Header content starts -->
-      <div class="header-container">
-        <div class="header-text">
-          <h1 class="heading__primary header-text__heading">Welcome to IRE!</h1>
-          <p class="header-text__paragraph">
-            Planned smart city development powered by nature, built around
-            technology and designed with people in mind.
-          </p>
-        </div>
-
-    
-        <div class="header-video">
-          <div class="header-video__video">
-              <!-- <video width="100%" height="80%"
-                controls
-                src="https://ire.ng/wp-content/uploads/2022/06/WhatsApp-Video-2022-06-14-at-1.54.02-PM.mp4"
-              ></video> -->
-            </div>
-          </div>
-          <p class="header-video__caption">Inhabit + Resort + Enterprise</p>
-          <p class="header-video__location"><img src="img/font-svg/location-dot-solid.svg" alt="" class="header-video__icon"> Mowe, Ogun state.</p>
-        </div>
-      </div>
-
-      <div class="cta">
-        <a href="#" class="cta__primary">Request a call</a>
-        <a href="" class="cta__primary">Book an inspection</a>
-      </div>
-      <!-- Header Content ends -->
     </header>
 
-   <!-- section-carousel -->
-   <section class="section-carousel">
-    <div class="section-wrapper flex">
-      <div class="section-top">
-        <h1 class="heading__primary section-top__text">Welcome to IRE</h1>
-        <div class="section-top-image">
-          <!-- <img src="img/carousel1.jpg" alt="" class="section-top-image__image" width="40rem"> -->
-        </div>
-      </div>
+    <!-- ================MAIN============ -->
+    <main class="main">
+      <!-- ----- Features Section----- -->
+      <section class="home">
+        <div class="home__container container">
+          <div class="home__container--contents">
+            <div class="home__container--contents_summary">
+              <h1 class="home__container--contents_summary-heading">
+                Welcome to IRE!
+              </h1>
 
-      <div class="section-bottom">
-        <p class="section-bottom__text">Ire is a Yoruba word that means Goodness in English. This name was carefully chosen because it best captures the experience that the project Ire represents. Ire by Pertinence is your best destination for work and play. IRE boasts of a serene environment powered by nature, built around technology, and designed with people in mind. You can have it all, who says you can't?</p>
-      </div>
-    </div>
-   </section>
-   <!-- Section-carousel ends -->
+              <p class="home__container--contents_summary-paragraph">
+                Planned smart city development powered by nature, built around
+                technology and designed with people in mind.
+              </p>
+            </div>
 
-   <section class="section-features">
-    <h1 class="heading__primary">Features</h1>
-    <p class="section-features__text">"It's Time to own a New Home for your better Lifestyle"</p>
-    <div class="section-wrapper flex">
-      <div>
-        <div class="features-image">
-          <img src="img/font-svg/house-solid.svg" alt="" class="features-image__image">
-        </div>
-  
-        <h1 class="features__title">Appropriate Land Title</h1>
-        <p class="features__paragraph">To keep you rest assured, we are bringing the most important land document in Nigeria to you. Your property will have a Global C of O.</p>
-      </div>
-      
-      <div>
-        <div class="features-image">
-          <img src="img/font-svg/users-solid.svg" alt="" class="features-image__image">
-        </div>
-    
-        <h1 class="features__title">Smart Coworking Arena</h1>
-        <p class="features__paragraph">We value productivity. Work in comfort. Work in serenity. The co-working arena is just a 7-minute drive from the residential areas. </p>
-      </div>
+            <div class="home__container--contents_photo">
+              <div
+                class="home__container--contents_photo-overlay"
+                style="
+                  background-image: url(https://ire.ng/wp-content/uploads/2022/06/irethumbnail.jpeg);
+                "
+              >
+                <i class="fa fa-play-circle video-icon" aria-hidden="true"></i>
+              </div>
+            </div>
 
-      <div>
-        <div class="features-image">
-          <img src="img/font-svg/shield-halved-solid.svg" alt="" class="features-image__image">
-        </div>
-    
-        <h1 class="features__title">Smart Security System</h1>
-        <p class="features__paragraph">State-of-the-art smart security system guarantees your safety, alongside our moderately armed security personnel who patrol on a 24-hour basis.</p>
-      </div>
+            <div class="home__container--contents_contact">
+              <h3 class="home__container--contents_contact-caption">
+                Inhabit + Resort + Enterprise
+              </h3>
 
-      <div>
-        <div class="features-image">
-          <img src="img/font-svg/building-solid.svg" alt="" class="features-image__image">
+              <p class="home__container--contents_contact-address">
+                <span style="color: #fdb31c; padding-right: 0.2rem"
+                  ><i aria-hidden="true" class="fas fa-map-marker-alt"></i
+                ></span>
+                Mowe, Ogun state.
+              </p>
+
+              <div class="home__container--contents_contact-button">
+                <button class="home__container--contents_contact-button-link">
+                  Request A Call
+                </button>
+
+                <button class="home__container--contents_contact-button-link">
+                  Book An Inspection
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="home__container--icons">
+            <div class="home__container--icons-item">
+              <i
+                class="fas fa-map-marker-alt home__container--icons-item_icon"
+                aria-hidden="true"
+              ></i>
+              <h3 class="home__container--icons-item_header">80</h3>
+              <p class="home__container--icons-item_paragraph">
+                Estates Location
+              </p>
+            </div>
+
+            <div class="home__container--icons-item">
+              <i
+                aria-hidden="true"
+                class="fas fa-handshake home__container--icons-item_icon"
+              ></i>
+              <h3 class="home__container--icons-item_header">7</h3>
+              <p class="home__container--icons-item_paragraph">
+                Number of States
+              </p>
+            </div>
+
+            <div class="home__container--icons-item">
+              <i
+                aria-hidden="true"
+                class="fas fa-landmark home__container--icons-item_icon"
+              ></i>
+              <h3 class="home__container--icons-item_header">
+                2.1 million sqm
+              </h3>
+              <p class="home__container--icons-item_paragraph">SQMs Sold</p>
+            </div>
+
+            <div class="home__container--icons-item">
+              <i
+                aria-hidden="true"
+                class="fas fa-people-arrows home__container--icons-item_icon"
+              ></i>
+              <h3 class="home__container--icons-item_header">30,000+</h3>
+              <p class="home__container--icons-item_paragraph">
+                Satisfied Customers
+              </p>
+            </div>
+          </div>
         </div>
-  
-        <h1 class="features__title">Sustainable architecture</h1>
-        <p class="features__paragraph">The layout and design were done with your potential needs in mind. Through deep research, taken from a customer-centric approach.
+      </section>
+
+      <!-- section-carousel -->
+
+      <section class="section-carousel">
+        <div class="section-wrapper flex">
+          <div class="section-top">
+            <h1 class="heading__primary section-top__text">Welcome to IRE</h1>
+
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide swiper-slide--1"></div>
+                <div class="swiper-slide swiper-slide--2"></div>
+                <div class="swiper-slide swiper-slide--3"></div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+
+          <div class="section-bottom">
+            <h1 class="section-bottom heading__primary">Welcome to Ire</h1>
+            <p class="section-bottom__text">
+              Ire is a Yoruba word that means Goodness in English. This name was
+              carefully chosen because it best captures the experience that the
+              project Ire represents. Ire by Pertinence is your best destination
+              for work and play. IRE boasts of a serene environment powered by
+              nature, built around technology, and designed with people in mind.
+              You can have it all, who says you can't?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- Features Section----- -->
+      <section class="features">
+        <h1 class="features__section--title">Features</h1>
+        <p class="features__section--subtitle">
+          "It’s Time to own a New Home for your better Lifestyle"
         </p>
-      </div>
-      
-      <div>
-        <div class="features-image">
-          <img src="img/font-svg/building-circle-check-solid.svg" alt="" class="features-image__image">
+
+        <div class="features__container container">
+          <div class="features__container--upper">
+            <div class="features__container--item">
+              <i
+                aria-hidden="true"
+                class="fas fa-warehouse features__container--item_icon"
+              ></i>
+              <h3 class="features__container--item_header">
+                Appropriate Land Title
+              </h3>
+              <p class="features__container--item_summary">
+                To keep you rest assured, we are bringing the most important
+                land document in Nigeria to you. Your property will have a
+                <span style="color: #ffa137">Global C of O.</span>
+              </p>
+            </div>
+
+            <div class="features__container--item">
+              <i
+                aria-hidden="true"
+                class="fas fa-people-arrows features__container--item_icon"
+              ></i>
+              <h3 class="features__container--item_header">
+                Smart Coworking Arena
+              </h3>
+              <p class="features__container--item_summary">
+                We value productivity. Work in comfort. Work in serenity. The
+                co-working arena is just a 7-minute drive from the residential
+                areas.
+              </p>
+            </div>
+
+            <div class="features__container--item">
+              <i
+                aria-hidden="true"
+                class="fas fa-user-secret features__container--item_icon"
+              ></i>
+              <h3 class="features__container--item_header">
+                Smart Security System
+              </h3>
+              <p class="features__container--item_summary">
+                State-of-the-art smart security system guarantees your safety,
+                alongside our moderately armed security personnel who patrol on
+                a 24-hour basis.
+              </p>
+            </div>
+
+            <div class="features__container--item">
+              <i
+                aria-hidden="true"
+                class="far fa-building features__container--item_icon"
+              ></i>
+              <h3 class="features__container--item_header">
+                Sustainable architecture
+              </h3>
+              <p class="features__container--item_summary">
+                The layout and design were done with your potential needs in
+                mind. Through deep research, taken from a customer-centric
+                approach.
+              </p>
+            </div>
+          </div>
+
+          <div class="features__container--lower">
+            <div class="features__container--item">
+              <i
+                aria-hidden="true"
+                class="fas fa-archway features__container--item_icon"
+              ></i>
+              <h3 class="features__container--item_header">
+                State-of-the-art Buildings
+              </h3>
+              <p class="features__container--item_summary">
+                Industry-leading materials are being sourced and used in
+                erecting every structure. Made to compete with the best in class
+                around the globe.
+              </p>
+            </div>
+
+            <div class="features__container--item">
+              <i
+                aria-hidden="true"
+                class="fas fa-baseball-ball features__container--item_icon"
+              ></i>
+              <h3 class="features__container--item_header">
+                Furnished Sporting Facilities
+              </h3>
+              <p class="features__container--item_summary">
+                Relieve stress with the calmness that comes with swimming, or
+                the adrenaline rush of football, basketball, lawn tennis
+              </p>
+            </div>
+
+            <div class="features__container--item">
+              <i
+                aria-hidden="true"
+                class="far fa-snowflake features__container--item_icon"
+              ></i>
+              <h3 class="features__container--item_header">
+                Efficient Estate Management
+              </h3>
+              <p class="features__container--item_summary">
+                You live, we maintain. Just focus on living your best life with
+                the facilities in the estate and we will ensure you have them
+                long enough to enjoy!
+              </p>
+            </div>
+          </div>
         </div>
-    
-        <h1 class="features__title">State-of-the-art Buildings</h1>
-        <p class="features__paragraph">Industry-leading materials are being sourced and used in erecting every structure. Made to compete with the best in class around the globe. 
-        </p>
-      </div>
 
-      <div>
-        <div class="features-image">
-          <img src="img/font-svg/basketball-solid.svg" alt="" class="features-image__image">
+        <div class="features__container-button">
+          <button class="features-btn">
+            <a href="#">
+              <!-- <i class="fa-solid fa-circle-arrow-down"></i> -->
+              <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+              <span>Download Brochure</span>
+            </a>
+          </button>
         </div>
-    
-        <h1 class="features__title">Furnished Sporting Facilities</h1>
-        <p class="features__paragraph">Relieve stress with the calmness that comes with swimming, or the adrenaline rush of football, basketball, lawn tennis
-        </p>
-      </div>
+      </section>
 
-      <div>
-        <div class="features-image">
-          <img src="img/font-svg/list-check-solid.svg" alt="" class="features-image__image">
+      <!--  --Services Section --- -->
+      <section class="service">
+        <div class="service__container containe">
+          <div class="service__container--card">
+            <div class="service__container--card_summary">
+              <h2 class="service__container--card_summary-header">
+                RESORT CENTRE
+              </h2>
+              <div class="summary-divider"></div>
+              <p class="service__container--card_summary-content">
+                The only place in Nigeria <br />
+                that time forgot is at the resort in the heart of IRE. Have a
+                Hawaiian holiday- what happens at the resort, stays at the
+                resort!
+              </p>
+            </div>
+
+            <div class="service__container--card_photo resort">
+              <img src="./img/oreofe-1.png" alt="" />
+            </div>
+          </div>
+
+          <div class="service__container--card">
+            <div class="service__container--card_summary">
+              <h2 class="service__container--card_summary-header">
+                SPORT CENTRE
+              </h2>
+              <div class="summary-divider"></div>
+              <p class="service__container--card_summary-content">
+                Relieve stress with the calmness that comes with swimming, or
+                the adrenaline rush of football and basketball
+              </p>
+            </div>
+
+            <div class="service__container--card_photo sport-center">
+              <img src="./img/sport-center.png" class="sport" alt="" />
+            </div>
+          </div>
+
+          <div class="service__container--card">
+            <div class="service__container--card_summary">
+              <h2 class="service__container--card_summary-header">
+                SHOPPING MALL
+              </h2>
+              <div class="summary-divider"></div>
+              <p class="service__container--card_summary-content">
+                A shopping mall which includes a mart, pharmacy and game zone
+                for the kids. You don’t need to leave if you do not want to.
+              </p>
+            </div>
+
+            <div class="service__container--card_photo leisure">
+              <img src="./img/leiture.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="service__container--card">
+            <div class="service__container--card_summary">
+              <h2 class="service__container--card_summary-header">SCHOOLS</h2>
+              <div class="summary-divider"></div>
+              <p class="service__container--card_summary-content">
+                At IRE’s schools, global standards are met, great futures are
+                built; the child is equipped.
+              </p>
+            </div>
+
+            <div class="service__container--card_photo school">
+              <img src="./img/oreofe-1.png" alt="" />
+            </div>
+          </div>
         </div>
-    
-        <h1 class="features__title">Efficient Estate Management</h1>
-        <p class="features__paragraph">You live, we maintain. Just focus on living your best life with the facilities in the estate and we will ensure you have them long enough to enjoy!
-        </p>
-      </div>  
+      </section>
 
-      <div class="btn">
-          <a href="#" class="btn__download"> <img src="img/font-svg/circle-arrow-down-solid.svg" alt="" class="btn__icon"><span>Download Brochure</span> </a>
+      <!--  -----Ire Background ------ -->
+      <section
+        class="background"
+        style="background-image: url('./img/background-photo.jpg')"
+      >
+        <div class="background__container container">
+          <div class="background__container--contents">
+            <h1 class="background__container--contents_title">
+              Need to discuss IRE?
+            </h1>
 
-        
+            <p class="background__container--contents_subtitle">
+              Get updates on IRE Projects
+            </p>
+
+            <div class="background__container--contents_button">
+              <button class="background-btn">
+                <a href="#">
+                  <span>Request A Call</span>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  ------ Product Section ------ -->
+      <section class="product">
+        <h1 class="product__header">PRODUCT OFFER</h1>
+
+        <div class="product__container container">
+          <div class="product__container--card" style="height: 514px">
+            <div class="product__content">
+              <div class="product__content--header">
+                <h1 class="product__content--header_heading">STARTER</h1>
+                <span class="product__content--header_subheading">300SQM</span>
+              </div>
+
+              <div class="product__content--price">
+                <span>N</span>
+                <h1 class="product__content--price_integer">3,750,000</h1>
+              </div>
+
+              <div class="product__content--features">
+                <ul class="features-list">
+                  <li class="features-item item">
+                    <i aria-hidden="true" class="far fa-circle"></i>
+                    <span> Receipt</span>
+                  </li>
+                  <li class="features-item item">
+                    <i aria-hidden="true" class="far fa-circle"></i
+                    ><span>Contract of Sale</span>
+                  </li>
+                  <li class="features-item">
+                    <i aria-hidden="true" class="far fa-circle"></i
+                    ><span>Global C of O </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="product__content--button">
+                <a
+                  class="product__content--button-btn"
+                  href="https://ire.ng/sales/"
+                  target="_blank"
+                  >Get started</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="product__container--card card-black">
+            <div class="product__content content-border">
+              <div
+                class="product__content--header"
+                style="border-bottom: 1px solid"
+              >
+                <h1 class="product__content--header_heading">CLASSIC</h1>
+                <span class="product__content--header_subheading">450SQM</span>
+              </div>
+
+              <div
+                class="product__content--price price"
+                style="border-bottom: 1px solid"
+              >
+                <span>N</span>
+                <h1 class="product__content--price_integer">5,625,000</h1>
+              </div>
+
+              <div
+                class="product__content--features"
+                style="border-bottom: 1px solid"
+              >
+                <ul class="features-list">
+                  <li class="features-item item item-black">
+                    <i aria-hidden="true" class="far fa-circle"></i>
+                    <span> Receipt</span>
+                  </li>
+                  <li class="features-item item item-black">
+                    <i aria-hidden="true" class="far fa-circle"></i
+                    ><span>Contract of Sale</span>
+                  </li>
+                  <li class="features-item">
+                    <i aria-hidden="true" class="far fa-circle"></i
+                    ><span>Global C of O </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="product__content--button button">
+                <a
+                  class="product__content--button-btn btn-black"
+                  href="https://ire.ng/sales/"
+                  target="_blank"
+                  >Get started</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="product__container--card" style="height: 555px">
+            <div class="product__content">
+              <div class="product__content--header">
+                <h1 class="product__content--header_heading">EXECUTIVE</h1>
+                <span class="product__content--header_subheading">600SQM</span>
+              </div>
+
+              <div class="product__content--price">
+                <span>N</span>
+                <h1 class="product__content--price_integer">7,500,000</h1>
+              </div>
+
+              <div class="product__content--features">
+                <ul class="features-list">
+                  <li class="features-item item">
+                    <i aria-hidden="true" class="far fa-circle"></i>
+                    <span> Receipt</span>
+                  </li>
+                  <li class="features-item item">
+                    <i aria-hidden="true" class="far fa-circle"></i
+                    ><span>Contract of Sale</span>
+                  </li>
+                  <li class="features-item">
+                    <i aria-hidden="true" class="far fa-circle"></i
+                    ><span>Global C of O </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="product__content--button">
+                <a
+                  class="product__content--button-btn"
+                  href="https://ire.ng/sales/"
+                  target="_blank"
+                  >Get started</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="product__container--card card-black">
+            <div class="product__content content-border">
+              <div
+                class="product__content--header"
+                style="border-bottom: 1px solid"
+              >
+                <h1 class="product__content--header_heading">COMMERCIAL</h1>
+                <span class="product__content--header_subheading">600SQM</span>
+              </div>
+
+              <div
+                class="product__content--price price"
+                style="border-bottom: 1px solid"
+              >
+                <span>N</span>
+                <h1 class="product__content--price_integer">15,000,000</h1>
+              </div>
+
+              <div
+                class="product__content--features"
+                style="border-bottom: 1px solid"
+              >
+                <ul class="features-list">
+                  <li class="features-item item item-black">
+                    <i aria-hidden="true" class="far fa-circle"></i>
+                    <span> Receipt</span>
+                  </li>
+                  <li class="features-item item item-black">
+                    <i aria-hidden="true" class="far fa-circle"></i
+                    ><span>Contract of Sale</span>
+                  </li>
+                  <li class="features-item">
+                    <i aria-hidden="true" class="far fa-circle"></i
+                    ><span>Global C of O </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="product__content--button">
+                <a
+                  class="product__content--button-btn btn-black"
+                  href="https://ire.ng/sales/"
+                  target="_blank"
+                  >Get started</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__documentation container">
+          <h1>Documentation and Development costs</h1>
+          <a href="#" class="documentation-btn" role="button">
+            <span class="documentation-btn-text">₦ 2,500,000</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- -----FAQs Section----- -->
+      <section class="faqs">
+        <div class="faqs__container container">
+          <div class="faqs__container--left">
+            <h1 class="faqs__container--header">FAQS</h1>
+          </div>
+
+          <div class="faqs__container--right">
+            <div>
+              <h2 class="faqs__container--right_header">
+                We have compiled most frequent questions asked and our answers
+                to them
+              </h2>
+
+              <div class="faqs__container--right_question">
+                <header class="question__header">
+                  <!-- <i class="bx bx-chevron-down question__icon"></i> -->
+                  <h3 class="question__content-title">
+                    1. Where is IRE located?
+                  </h3>
+                  <i
+                    class="fa fa-chevron-down question__icon"
+                    aria-hidden="true"
+                  ></i>
+                </header>
+
+                <div class="question__content active">
+                  <p class="question__description">
+                    Ire is a budding new smart city development located in Mowe,
+                    Ogun State, and developed by Pertinence Group. The focus is
+                    on creating an enabling, serene, and secure community for
+                    its users.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faqs__container--right_question">
+                <header class="question__header">
+                  <!-- <i class="bx bx-chevron-down question__icon"></i> -->
+                  <h3 class="question__item-title">
+                    2. How can I invest in IRE?
+                  </h3>
+                  <i
+                    class="fa fa-chevron-down question__icon"
+                    aria-hidden="true"
+                  ></i>
+                </header>
+
+                <div class="question__content">
+                  <p class="question__description">
+                    See the project. Call a realtor or Call an in-house
+                    representative or we reach out based on the details
+                    submitted. Go for a site inspection (or not). Fill out a
+                    short form with the necessary information. Pay. Receive
+                    necessary documents.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faqs__container--right_question">
+                <header class="question__header">
+                  <!-- <i class="bx bx-chevron-down question__icon"></i> -->
+                  <h3 class="question__item-title">
+                    3. What are IRE property documents?
+                  </h3>
+                  <i
+                    class="fa fa-chevron-down question__icon"
+                    aria-hidden="true"
+                  ></i>
+                </header>
+
+                <div class="question__content">
+                  <p class="question__description">
+                    The title document is Global C of O. Upon initial deposit,
+                    you will receive Receipts and Contracts of Sale.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faqs__container--right_question">
+                <header class="question__header">
+                  <!-- <i class="bx bx-chevron-down question__icon"></i> -->
+                  <h3 class="question__item-title">
+                    4. What plot sizes are available?
+                  </h3>
+                  <i
+                    class="fa fa-chevron-down question__icon"
+                    aria-hidden="true"
+                  ></i>
+                </header>
+
+                <div class="question__content">
+                  <p class="question__description">
+                    300 SQM & 500 SQM are available.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faqs__container--right_question">
+                <header class="question__header">
+                  <!-- <i class="bx bx-chevron-down question__icon"></i> -->
+                  <h3 class="question__item-title">
+                    5. Is there any limit to commencing construction on my land
+                    after application?
+                  </h3>
+                  <i
+                    class="fa fa-chevron-down question__icon"
+                    aria-hidden="true"
+                  ></i>
+                </header>
+
+                <div class="question__content">
+                  <p class="question__description">
+                    Construction commences immediately after the building plan
+                    has been approved by the estate technical team and Govt
+                    regulatory agencies.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faqs__container--right-question-button">
+              <button class="question-btn">
+                <a href="#"
+                  ><i class="fa fa-arrow-right" aria-hidden="true"></i
+                  ><span>View More</span></a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --- Media Section---- -->
+      <section class="media">
+        <div class="media__container container">
+          <div class="media__container--header">
+            <h1 class="media-header">MEDIA</h1>
+          </div>
+
+          <div class="media__container--photo">
+            <img src="./img/lasgidi.png" alt="" />
+            <img src="./img/lasgidi.png" alt="" />
+            <img src="./img/lasgidi.png" alt="" />
+            <img src="./img/lasgidi.png" alt="" />
+            <img src="./img/lasgidi.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================FOOTER============ -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__container--logo">
+          <img src="./img/ire-footer-logo.png" alt=" footer-logo" />
+        </div>
+
+        <div class="footer__container--quick-links">
+          <h2 class="quick-links--header">Quick Section</h2>
+
+          <ul class="quick-links--list">
+            <li class="quick-links--item">
+              <a href="#" class="quick-link">Features & Benefits</a>
+            </li>
+            <li class="quick-section--item">
+              <a href="#" class="quick-link">Gallary</a>
+            </li>
+            <li class="quick-section--item">
+              <a href="#" class="quick-link">Pricing</a>
+            </li>
+            <li class="quick-section--item">
+              <a href="#" class="quick-link">Our Story</a>
+            </li>
+            <li class="quick-section--item">
+              <a href="#" class="quick-link">Faq</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__container--quick-links">
+          <h2 class="quick-links--header">Get in Touch</h2>
+
+          <ul class="quick-links--list">
+            <li class="quick-links--item">
+              <a href="#" class="quick-link">Facebook</a>
+            </li>
+            <li class="quick-links--item">
+              <a href="#" class="quick-link">Instagram</a>
+            </li>
+            <li class="quick-links--item">
+              <a href="#" class="quick-link">Twitter</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__container--quick-links">
+          <h2 class="quick-links--header">Contact Info</h2>
+
+          <ul class="quick-links--list">
+            <li class="quick-links--item">
+              <a href="#" class="quick-link"
+                >Pertinence place 1 Tinuola Close,</a
+              >
+            </li>
+            <li class="quick-links--item">
+              <a href="#" class="quick-link">Animashaun, Akowonjo, Egbeda,</a>
+            </li>
+            <li class="quick-links--item">
+              <a href="#" class="quick-link">Lagos</a>
+            </li>
+            <li class="quick-links--item">
+              <a href="#" class="quick-link">09121781759</a>
+            </li>
+            <li class="quick-links--item">
+              <a href="#" class="quick-link">info@pertinenceproperties.com</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </footer>
+    <!-- -----Footer Copyright ---- -->
+    <section class="footer__copyright">
+      <div class="footer__copyright--container container">
+        <p>Copyright&copy;2022 IRE by Pertinence</p>
+        <small>Powered by Pertinence Group</small>
+      </div>
+    </section>
 
-    
-   </section>
+    <!--========== SCRIPT JS ==========-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>

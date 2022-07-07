@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;700&display=swap");
 
 *,
 *::after,
@@ -12,10 +12,34 @@ html {
   font-size: 62.5%;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: $color-white;
+}
+
 body {
   box-sizing: border-box;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 1.5rem;
   background-color: $bg-color-black;
   color: $color-white;
 }
+
+.container {
+  max-width: 1200px;
+  width: calc(100% - 4rem);
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
